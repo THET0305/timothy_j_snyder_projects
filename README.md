@@ -33,7 +33,7 @@ Individual projects may use a wide range of technologies, which are documented a
 
 The portfolio is hosted via GitHub Pages:
 
-https://YOUR_USERNAME.github.io
+https://THET0305.github.io
 
 ## Local Development
 
