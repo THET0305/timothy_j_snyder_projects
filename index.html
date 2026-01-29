@@ -13,48 +13,163 @@
     <p class="subtitle">Unity / Full Stack - Personal projects and notes.</p>
 
     <p class="intro">
-      Hi, this is my project portfolio.<br>
+      <strong>Hi, this is my project portfolio.</strong><br>
       It showcases videos of shipped work projects alongside links to personal and experimental builds.<br>
       I have worked extensively with emerging technologies, where rapid prototyping, iteration, and problem-solving under uncertainty are core to the process.<br>
       A homeschooler through and through, I learn best by applying concepts directly in real systems.
     </p>
   </header>
 
-  <h2>Projects</h2>
+  <main>
+    <section aria-labelledby="joy-komatsu-projects">
+      <h2 id="joy-komatsu-projects">Joy/Komatsu Projects</h2>
 
-  <div class="grid">
-    <div class="card" data-modal="project1">
-      <h3>Project Title</h3>
-      <p>1-2 sentences describing what it is and why it exists.</p>
-      <p class="meta">Unity, C#, UIToolkit</p>
-    </div>
+      <p class="disclaimer">
+        Disclaimer: This section only includes material that can be found publicly. I do not claim ownership or rights to these projects.
+        This work is shown solely to showcase projects I have contributed to. Some items were prototypes or exploratory efforts that were
+        shelved and are not publicly available.
+      </p>
 
-    <div class="card" data-modal="project2">
-      <h3>Project Title 2</h3>
-      <p>Short description.</p>
-      <p class="meta">C#, HID, Tools</p>
-    </div>
-  </div>
+      <div class="grid">
+        <div class="card" data-modal="ugsrContinuousMiner">
+          <h3>UGSR Continuous Miner Simulator</h3>
+          <p>Underground hard rock simulator experience focused on continuous miner operation and training.</p>
+          <p class="meta">Unity, Simulation, Training</p>
+        </div>
+
+        <div class="card" data-modal="ugsrBatteryHauler">
+          <h3>UGSR Battery Hauler Simulator</h3>
+          <p>Simulator experience centered on battery hauler workflows and operator training scenarios.</p>
+          <p class="meta">Unity, Simulation, Training</p>
+        </div>
+
+        <div class="card" data-modal="projectGoldMiner">
+          <h3>Project Gold Miner (Exploratory Mobile Game)</h3>
+          <p>Exploratory prototype investigating mobile gameplay loops and rapid iteration on core mechanics.</p>
+          <p class="meta">Unity, Mobile, Prototyping</p>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="personal-projects">
+      <h2 id="personal-projects">Personal Projects</h2>
+
+      <div class="grid">
+        <div class="card" data-modal="asicWorkbench">
+          <h3>ASIC Workbench</h3>
+          <p>Personal tooling and experiments around workflows, data, and rapid iteration.</p>
+          <p class="meta">Tools, Prototyping</p>
+        </div>
+
+        <div class="card" data-modal="questBoard">
+          <h3>QuestBoard</h3>
+          <p>A project focused on organizing tasks, progression, and goal-driven structure.</p>
+          <p class="meta">Productivity, App</p>
+        </div>
+
+        <div class="card" data-modal="siteScout">
+          <h3>SiteScout</h3>
+          <p>A lightweight project exploring discovery, tracking, and presentation of site or content signals.</p>
+          <p class="meta">Web, Utility</p>
+        </div>
+
+        <div class="card" data-modal="flaskEmotionAI">
+          <h3>Flask Emotion Detection AI</h3>
+          <p>A Flask-based experiment for emotion detection, inference, and simple web presentation.</p>
+          <p class="meta">Python, Flask, ML</p>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <!-- Modal -->
   <div id="modalOverlay" class="modal-overlay hidden">
-    <div class="modal">
-      <button class="close" id="modalClose">X</button>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="close" id="modalClose" aria-label="Close">X</button>
       <div id="modalContent"></div>
     </div>
   </div>
 
-  <!-- Modal content templates -->
-  <template id="project1">
-    <h3>Project Title</h3>
-    <p>Longer description of the project.</p>
-    <p><a href="https://github.com/YOUR_USERNAME/PROJECT_REPO" target="_blank">View on GitHub</a></p>
+  <!-- Joy/Komatsu modal templates -->
+  <template id="ugsrContinuousMiner">
+    <h3 id="modalTitle">UGSR Continuous Miner Simulator</h3>
+    <p>
+      Work project showcased using only publicly available material. This simulator focused on operator training and workflow simulation
+      for continuous miner operation in an underground setting.
+    </p>
+    <p class="meta">Unity, Simulation, Training</p>
+    <p>
+      <a href="#" target="_blank" rel="noopener">Public reference link (add)</a>
+    </p>
   </template>
 
-  <template id="project2">
-    <h3>Project Title 2</h3>
-    <p>Details, goals, and technical notes.</p>
-    <p><a href="https://github.com/YOUR_USERNAME/PROJECT_REPO_2" target="_blank">View on GitHub</a></p>
+  <template id="ugsrBatteryHauler">
+    <h3 id="modalTitle">UGSR Battery Hauler Simulator</h3>
+    <p>
+      Work project showcased using only publicly available material. This simulator focused on battery hauler training scenarios and
+      operational workflows, with an emphasis on usability and repeatable training outcomes.
+    </p>
+    <p class="meta">Unity, Simulation, Training</p>
+    <p>
+      <a href="#" target="_blank" rel="noopener">Public reference link (add)</a>
+    </p>
+  </template>
+
+  <template id="projectGoldMiner">
+    <h3 id="modalTitle">Project Gold Miner (Exploratory Mobile Game)</h3>
+    <p>
+      Exploratory prototype created to test mobile gameplay loops and validate mechanics quickly. This was an internal exploration and
+      may not be publicly available beyond high-level references.
+    </p>
+    <p class="meta">Unity, Mobile, Prototyping</p>
+    <p>
+      <a href="#" target="_blank" rel="noopener">Public reference link (add)</a>
+    </p>
+  </template>
+
+  <!-- Personal project modal templates -->
+  <template id="asicWorkbench">
+    <h3 id="modalTitle">ASIC Workbench</h3>
+    <p>
+      Personal project focused on building practical tooling and experiments that support rapid iteration and repeatable workflows.
+    </p>
+    <p class="meta">Tools, Prototyping</p>
+    <p>
+      <a href="https://github.com/YOUR_USERNAME/ASIC_Workbench" target="_blank" rel="noopener">View on GitHub</a>
+    </p>
+  </template>
+
+  <template id="questBoard">
+    <h3 id="modalTitle">QuestBoard</h3>
+    <p>
+      Personal project exploring goal-driven organization and progression systems for tasks and personal development.
+    </p>
+    <p class="meta">Productivity, App</p>
+    <p>
+      <a href="https://github.com/YOUR_USERNAME/QuestBoard" target="_blank" rel="noopener">View on GitHub</a>
+    </p>
+  </template>
+
+  <template id="siteScout">
+    <h3 id="modalTitle">SiteScout</h3>
+    <p>
+      Personal utility project exploring discovery, tracking, and presentation of site or content signals in a simple, maintainable way.
+    </p>
+    <p class="meta">Web, Utility</p>
+    <p>
+      <a href="https://github.com/YOUR_USERNAME/SiteScout" target="_blank" rel="noopener">View on GitHub</a>
+    </p>
+  </template>
+
+  <template id="flaskEmotionAI">
+    <h3 id="modalTitle">Flask Emotion Detection AI</h3>
+    <p>
+      Flask-based experiment that wraps an emotion detection model behind a small web UI for simple inference and testing workflows.
+    </p>
+    <p class="meta">Python, Flask, ML</p>
+    <p>
+      <a href="https://github.com/YOUR_USERNAME/Flask-Emotion-Detection-AI" target="_blank" rel="noopener">View on GitHub</a>
+    </p>
   </template>
 
   <script src="js/modal.js"></script>
