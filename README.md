@@ -15,7 +15,6 @@ I’m a homeschooler through and through, and I learn best by applying concepts 
 - Short videos demonstrating completed or in-progress work projects
 - Links to personal GitHub repositories and experiments
 - Technical prototypes, tools, and systems explorations
-- Notes and documentation where context adds value
 
 Not all projects are polished products. Many are explorations, proofs of concept, or focused experiments intended to answer specific technical questions.
 
@@ -34,14 +33,6 @@ Individual projects may use a wide range of technologies, which are documented a
 The portfolio is hosted via GitHub Pages:
 
 https://THET0305.github.io
-
-## Local Development
-
-No build tools are required.
-
-1. Clone the repository
-2. Open `index.html` in a browser
-3. Edit content directly and refresh
 
 ## License
 
